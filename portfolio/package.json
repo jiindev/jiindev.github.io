@@ -12,13 +12,19 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "rmdev": "rm -rf node_modules/ .cache/ public/ && npm i && gatsby develop"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.21.22",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-styled-components": "^3.3.1",
     "gh-pages": "^2.2.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.1.0",
+    "styled-reset": "^4.1.4"
   },
   "devDependencies": {
     "prettier": "2.0.5"
