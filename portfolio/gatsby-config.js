@@ -1,8 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
 
 module.exports = {
   /* Your site config here */
@@ -18,11 +13,6 @@ module.exports = {
             variants: [`100`, `400`, `700`]
           },
           {
-            family: `Inter`,
-            subsets: [`latin`],
-            variants: [`300`,`500`,`700`,`900`]
-          },
-          {
             amily: `Montserrat`,
             subsets: [`latin`],
             variants: [`100`, `400`, `700`]
@@ -30,5 +20,5 @@ module.exports = {
         ],
       },
     }
-  ],
+  ]
 }
