@@ -1,24 +1,17 @@
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `JIIN, DEVELOPER`
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        fonts: [
-          {
-            family: `Noto Sans KR`,
-            subsets: [`korean`],
-            variants: [`100`, `400`, `700`]
-          },
-          {
-            amily: `Montserrat`,
-            subsets: [`latin`],
-            variants: [`100`, `400`, `700`]
-          }
-        ],
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
-    }
+    },
   ]
 }
