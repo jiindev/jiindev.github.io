@@ -22,7 +22,7 @@ export default function Home() {
               <div>
                 <p>디자인을 전공하였지만 디자인보다는 코딩이 재미있어 개발을 시작하게 되었습니다. <br/>디자인 업무와 UX 기획 업무 모두를 경험해보았으며 지속적인 관심을 가지고 있는 커뮤니케이션형 개발자입니다. <br/>부족한 부분을 끊임없이 채워나가는, 사용자 친화적인 웹을 고민하고 만드는 개발자가 되고 싶습니다.
                 </p>
-                <a href="https://github.com/jiindev" target="blank"><Button><i class="fab fa-github"/> Github 바로가기</Button></a>
+                <a href="https://github.com/jiindev" target="blank"><Button><i className="fab fa-github"/> Github 바로가기</Button></a>
               </div>
            </div>
          </Header>
