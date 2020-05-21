@@ -47,7 +47,12 @@ export default function Layout ({ children }) {
           </div>
     </Nav>
     <Frame/>
-    {children}
+    <Page>
+      {children}
+      <Footer>
+      © 2020 gatsby simple-dev-theme by <a href="https://github.com/jiindev" target="blank">jiindev</a>
+      </Footer>
+    </Page>
     </>
   )
 };
@@ -152,5 +157,22 @@ const Nav = styled.nav`
     display: inline-block;
     @media only screen and (max-width: 720px) {
       font-size: 18px;
+    }
+  `;
+
+  const Page = styled.div`
+    position: relative;
+  `;
+  const Footer = styled.footer`
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    & a{
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
     }
   `;
