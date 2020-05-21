@@ -7,7 +7,10 @@ export default function Works() {
   return (
     <Layout>
       <Header headerText={'WORKS'}/>
-      <Work>
+      <Work 
+      data-sal="slide-up" 
+      data-sal-duration="800"
+      data-sal-easing="ease">
           <div className="center">
                 <div className="description">
                     <h4>DREAMWITCH <span>2020. 04 - 2020. 05</span></h4>
@@ -29,7 +32,10 @@ export default function Works() {
             <div className="img"></div>
           </div>
       </Work>
-      <Work>
+      <Work
+      data-sal="slide-up" 
+      data-sal-duration="800"
+      data-sal-easing="ease">
           <div className="center">
                 <div className="description">
                     <h4>마리의 할로윈 파티 <span>2019. 9 - 2019. 10</span></h4>
@@ -46,7 +52,10 @@ export default function Works() {
             <div className="img"></div>
           </div>
       </Work>
-      <Work>
+      <Work
+      data-sal="slide-up" 
+      data-sal-duration="800"
+      data-sal-easing="ease">
           <div className="center">
                 <div className="description">
                     <h4>JIIN, DEV <span>2020. 05</span></h4>
@@ -66,7 +75,10 @@ export default function Works() {
             <div className="img"></div>
           </div>
       </Work>
-      <Work>
+      <Work
+      data-sal="slide-up" 
+      data-sal-duration="800"
+      data-sal-easing="ease">
           <div className="center">
                 <div className="description">
                     <h4>I AM A MEDIA ARTIST <span>2018</span></h4>
@@ -87,7 +99,10 @@ export default function Works() {
             <div className="img"></div>
           </div>
       </Work>
-      <Work>
+      <Work
+      data-sal="slide-up" 
+      data-sal-duration="800"
+      data-sal-easing="ease">
           <div className="center">
                 <div className="description">
                     <h4>THE PERFORM <span>2018</span></h4>
