@@ -15,13 +15,12 @@ export default function Home() {
               <Typist cursor={{show:true}}>
                 JIIN,
                 <Typist.Delay ms={500}/><br/>&nbsp;DESIGNER
-                <Typist.Backspace count={8} delay={1000} />
-                <Typist.Delay ms={500}/>DEVELOPER
+                <Typist.Backspace count={6} delay={1000} />
+                <Typist.Delay ms={500}/>VELOPER
               </Typist>
               </h1>
               <div>
-                <p>디자인 전공을 했다 어쩌고 저쩌고<br/> 코딩에 흥미를 느껴 어쩌고저쩌고 개발공부를 시작
-                <br/>소통에 능한 개발자, 사용자 친화적인 웹을 만드는 개발자가 되고 싶습니다.
+                <p>디자인을 전공하였지만 디자인보다는 코딩이 재미있어 개발을 시작하게 되었습니다. <br/>디자인 업무와 UX 기획 업무 모두를 경험해보았으며 지속적인 관심을 가지고 있는 커뮤니케이션형 개발자입니다. <br/>부족한 부분을 끊임없이 채워나가는, 사용자 친화적인 웹을 고민하고 만드는 개발자가 되고 싶습니다.
                 </p>
                 <a href="https://github.com/jiindev" target="blank"><Button><i class="fab fa-github"/> Github 바로가기</Button></a>
               </div>
@@ -31,7 +30,7 @@ export default function Home() {
        </>
       );
   }
-
+  
   const TextAni = keyframes`
     from{
       opacity: 0;
@@ -55,13 +54,13 @@ export default function Home() {
     }
     & h1{
       font-size: 86px;
-      font-weight: 900;
+      font-weight: 700;
       & .Cursor{
         font-weight: 100;
       }
     }
     & div>div{
-      animation: ${TextAni} 1s ease-out 4s forwards;
+      animation: ${TextAni} 1s ease-out 5s forwards;
       opacity: 0;
       position: relative;
     }
@@ -85,10 +84,11 @@ export default function Home() {
           display: inline
         }
         & h1{
-          font-size: 60px;
+          font-size: 48px;
           height: 120px;
         }
         & p{
+          margin-top: 10px;
           & br{
             display: none;
           }
@@ -110,6 +110,7 @@ export default function Home() {
     font-family: 'Montserrat', 'Noto Sans KR',san-serif;
     transition: all .2s ease;
     cursor: pointer;
+    background-color: white;
     & a{
       color: black;
       text-decoration: none;

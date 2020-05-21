@@ -6,13 +6,16 @@ import { Helmet } from 'react-helmet'
 
 const GlobalStyle = createGlobalStyle`
 ${reset};
+html,body{
+  height: 100%;
+}
 body {
     font-size: 14px;
     font-family: 'Montserrat', 'Noto Sans KR',san-serif;
   }
 .center {
   width: 100%;
-  max-width: 1260px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 `
@@ -28,6 +31,9 @@ export default function Layout ({ children }) {
       <title>JIIN, DEV</title>
       <meta name="description" content="프론트 엔드 개발자 엄지인 포트폴리오 사이트" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800&display=swap" rel="stylesheet"></link>
+      <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
+      <meta property="og:description" content="프론트 엔드 개발자 엄지인 포트폴리오 사이트"/>
     </Helmet>
     <Nav hamburgerToggle={hamburgerToggle}>
           <div className="center">
@@ -53,7 +59,6 @@ const Frame = styled.div`
     position: fixed;
     z-index: 999;
     pointer-events: none;
-    border: 5px solid;
 `;
 const StyledLink = styled(GatsbyLink)`
     text-decoration: none;
@@ -69,7 +74,6 @@ const HamburgerButton = styled.span`
   width: 40px;
   & span, &:after, &:before{
     background-color: #000;
-    border-radius: 3px;
     content: '';
     display: block;
     height: 5px;
@@ -96,6 +100,7 @@ const Nav = styled.nav`
     box-sizing: border-box;
     z-index: 999;
     background-color: rgba(255,255,255,.85);
+    border-bottom: 3px solid white;
     & ul{
       float: right;
       margin-right: 10px;
@@ -106,7 +111,7 @@ const Nav = styled.nav`
       font-weight: 700;
       transition: all .2s ease;
       padding: 10px 15px;
-      margin: 0 5px;
+      margin: 3px 5px 0 5px;
       &:after{
         content: '';
         display: block;
@@ -141,7 +146,7 @@ const Nav = styled.nav`
   const LOGO = styled.span`
     font-size: 24px;
     text-align: left;
-    font-weight: 900;
+    font-weight: 700;
     vertical-align: center;
     padding-left: 15px;
     display: inline-block;
