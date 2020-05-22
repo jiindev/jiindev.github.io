@@ -1,6 +1,7 @@
 ---
 title: "드림위치 개발일지"
 date: "2020-05-21"
+thumbnail: '/blog/about-dreamwitch0.jpg'
 ---
 제로초님의 트위터 클론 사이트 nodebird 제작하기 강의를 끝까지 다 수강하여 next.js와 express.js를 이용해 하나의 사이트를 만드는 일련의 과정을 따라갔으나, 스스로 그런 사이트를 만들 수 있을지에 대해 확신이 서지 않았다. 
 

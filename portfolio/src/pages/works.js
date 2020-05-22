@@ -11,16 +11,12 @@ export default function Works() {
       <Wrap>
         {worksData.map((v, i)=>{
             return (
-                <Work 
-                data-sal="slide-right" 
-                data-sal-duration="800"
-                data-sal-easing="ease"
-                key={i}
-                >
+                <Work key={i}>
                     <div className="center">
                     <Image link={v.imgLink}></Image>
                             <div className="description">
-                                <h4>{v.title} <span>{v.date}</span></h4>
+                                <h4>{v.title}</h4>
+                                <Date>{v.date}</Date>
                                 <p>{v.description}</p>
                                 <ul>
                                 {
@@ -79,12 +75,7 @@ const Work = styled.div`
    & h4{
        font-size: 36px;
        font-weight: 700;
-       padding: 0 0 20px;
-       & span{
-           font-size: 16px;
-           margin-left: 5px;
-           font-weight: 500;
-       }
+       
    }
    & ul{
        padding: 30px 0;
@@ -149,4 +140,10 @@ export const Button = styled.button`
         color: white;
       }
     }
+`;
+
+const Date = styled.div`
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
 `;

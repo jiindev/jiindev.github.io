@@ -12,7 +12,7 @@ export default function Home() {
            <div>
               <Illust/>
               <h1>
-              <Typist cursor={{show:true}}>
+              <Typist cursor={{show:false}}>
                 JIIN,
                 <Typist.Delay ms={500}/><br/>&nbsp;DESIGNER
                 <Typist.Backspace count={6} delay={1000} />

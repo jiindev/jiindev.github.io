@@ -74,9 +74,9 @@ const HamburgerButton = styled.span`
   padding: 5px;
   cursor: pointer;
   margin-right: 15px;
-  margin-top: -5px;
   display: none;
   width: 40px;
+  vertical-align: middle;
   & span, &:after, &:before{
     background-color: #000;
     content: '';
@@ -99,17 +99,18 @@ const HamburgerButton = styled.span`
   }
 `;
 const Nav = styled.nav`
-    padding: 15px 0;
+
     position: fixed;
     width: 100%;
     box-sizing: border-box;
     z-index: 999;
     background-color: rgba(255,255,255,.85);
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
     & ul{
       float: right;
       margin-right: 10px;
       width: auto;
+      padding:10px 0;
     }
     & li{
       float: left;
@@ -133,6 +134,7 @@ const Nav = styled.nav`
       padding-bottom: 0;
       & ul{
         width: 100%;
+        padding-bottom: 30px;
         transition: all 1s ease;
         overflow: hidden;
         display: ${props=>props.hamburgerToggle ? 'block' : 'none'};
@@ -153,7 +155,7 @@ const Nav = styled.nav`
     text-align: left;
     font-weight: 700;
     vertical-align: center;
-    padding-left: 15px;
+    padding: 10px 0 10px 15px;
     display: inline-block;
     @media only screen and (max-width: 720px) {
       font-size: 18px;
@@ -167,6 +169,7 @@ const Nav = styled.nav`
     position: absolute;
     bottom: 0;
     width: 100%;
+    box-sizing: border-box;
     text-align: center;
     padding: 10px 0;
     font-size: 12px;
