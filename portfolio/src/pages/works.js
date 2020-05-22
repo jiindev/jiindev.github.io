@@ -133,7 +133,6 @@ export const Button = styled.button`
       text-decoration: none;
     }
     &:hover{
-      padding: 10px 50px;
       background-color: black;
       color: white;
       font-weight: 900;

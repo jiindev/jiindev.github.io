@@ -12,6 +12,7 @@ export default function About() {
         <div className="center">
           <Content>
             <Profile>
+              <div>
               <h3>
               <span>FRONT-END DEVELOPER</span><br/>
                 JIIN EUM
@@ -23,6 +24,8 @@ export default function About() {
                 <span>MAIL</span> jiindev@gmail.com
               </p>
               <Button><i className="fab fa-github"/> GITHUB</Button>
+              </div>
+              
             </Profile>
             <div>
                 <AboutSection>
@@ -54,7 +57,7 @@ export default function About() {
                   <Experience>
                     <li>
                       <div>
-                        <Title>폴리큐브 <span>프리랜서 디자이너, 삼성테마 UI 디자이너</span></Title>
+                        <Title>폴리큐브 <span>삼성테마 UI 디자이너</span></Title>
                         <Date>2016. 10 - 2016. 12</Date>
                       </div>
                       <p>
@@ -89,22 +92,22 @@ export default function About() {
                     </li>
                     <li>
                       <div>
-                        <Title>스마트기기 사용자경험(UX) 기획 및 설계 전문가 양성 과정 수료</Title>
+                        <Title>스마트기기 사용자경험(UX) 전문가 과정 <span>수료</span></Title>
                         <Date>2016. 8 - 2017. 2</Date>
                       </div>
-                      <p>한국인터넷전문가협회에서 주관한 스마트기기 사용자경험(UX) 기획 및 설계 전문가 양성 과정 수료</p>
+                      <p>한국인터넷전문가협회에서 주관한 스마트기기 사용자경험(UX) 기획 및 설계 전문가 양성 국비교육 과정 수료</p>
                     </li>
                     <li>
                       <div>
-                        <Title>웹퍼블리셔/프론트앤드 개발자(Frontend, PHP) 수료</Title>
+                        <Title>웹퍼블리셔/프론트앤드 개발자 과정 <span>수료</span></Title>
                         <Date>2018. 1 - 2018. 6</Date>
                       </div>
-                      <p>그린컴퓨터아카데미에서 주관한 웹퍼블리셔/프론트앤드 개발자(Frontend, PHP) 과정 수료</p>
+                      <p>그린컴퓨터아카데미에서 주관한 웹퍼블리셔/프론트앤드 개발자(Frontend, PHP) 국비교육 과정 수료</p>
                     </li>
                     <li>
                       <div>
-                        <Title>자바(JAVA)프로그래밍 수강</Title>
-                        <Date>2018. 12 - 2018. 1</Date>
+                        <Title>자바(JAVA)프로그래밍 <span>수강</span></Title>
+                        <Date>2018. 12 - 2019. 1</Date>
                       </div>
                       <p>
                         더조은컴퓨터학원에서 주관한 자바(JAVA)프로그래밍(초급), 자바(JAVA&amp;JSP)프로그래밍(중급) 과정 수강
@@ -112,14 +115,14 @@ export default function About() {
                     </li>
                     <li>
                       <div>
-                        <Title>정보처리기사 자격증 취득</Title>
+                        <Title>정보처리기사 <span>자격증 취득</span></Title>
                         <Date>2019. 8</Date>
                       </div>
                       <p></p>
                     </li>
                     <li>
                       <div>
-                        <Title>코드스테이츠 자바스크립트 pre 코스 이수</Title>
+                        <Title>코드스테이츠 <span>자바스크립트 pre 코스 이수</span></Title>
                         <Date>2019. 9 - 2019. 10</Date>
                       </div>
                       <p></p>
@@ -129,26 +132,26 @@ export default function About() {
                 <Section>
                   <h3>AWARD</h3>
                   <Experience>
-                    <li>
+                  <li>
                       <div>
-                        <Title>한국인터넷전문가협회 <span>UX 시상식</span></Title>
-                        <Date>2017. 2</Date>
-                      </div>
-                      <p>4인 팀작업으로 ‘Coinstage’ 오락 서비스 기획 및 UX/UI디자인 작품 제출, 최우수상 수상</p>
-                    </li>
-                    <li>
-                      <div>
-                        <Title>iCOOP 생협 <span>소중한 우리 농업 지키기 공모전</span></Title>
-                        <Date>2015. 2</Date>
-                      </div>
-                      <p>애니메이션 영상 작업으로 UCC 부문 최우수상 수상</p>
-                    </li>
-                    <li>
-                      <div>
-                        <Title>라이나생명 대학생 아이디어 공모전 <span>THE 건강한 가족, THE 건강한 사회</span></Title>
+                        <Title>라이나생명 <span>대학생 아이디어 공모전 대상</span></Title>
                         <Date>2014. 12</Date>
                       </div>
-                      <p>2인 팀작업으로 ‘행복은 이어집니다’ 영상작품을 제출, 대상 수상 <a href="https://www.youtube.com/watch?v=VhGKu-gyzAk" target="blank">자세히 보기</a></p>
+                      <p>라이나생명 대학생 아이디어 공모전 'THE 건강한 가족, THE 건강한 사회'. 2인 팀작업으로 ‘행복은 이어집니다’ 영상작품을 제출. 대상 수상 <a href="https://www.youtube.com/watch?v=VhGKu-gyzAk" target="blank">자세히 보기</a></p>
+                    </li>
+                    <li>
+                      <div>
+                        <Title>iCOOP 생협 <span>공모전 UCC 부문 최우수상</span></Title>
+                        <Date>2015. 2</Date>
+                      </div>
+                      <p>iCOOP 생협에서 진행한 소중한 우리 농업 지키기 공모전. 애니메이션 영상 작업으로 UCC 부문 최우수상 수상</p>
+                    </li>
+                    <li>
+                      <div>
+                        <Title>한국인터넷전문가협회 <span>UX 시상식 최우수상</span></Title>
+                        <Date>2017. 2</Date>
+                      </div>
+                      <p>4인 팀작업으로 ‘Coinstage’ 오락 서비스 기획 및 UX/UI디자인 작품 제출. 최우수상 수상</p>
                     </li>
                   </Experience>
                 </Section>
@@ -205,6 +208,10 @@ const Profile = styled.div`
   min-width: 300px;
   padding: 0 30px 30px 30px;
   box-sizing: border-box;
+  &>div{
+    position: sticky;
+    top: 68px;
+  }
   & h3{
     font-weight: 700;
     font-size: 27px;
@@ -228,6 +235,10 @@ const Profile = styled.div`
     margin-bottom: 30px;
     text-align: center;
     border: none;
+    &>div{
+      position: static;
+      top: 0;
+    }
     & img{
       margin-bottom: 30px;
       width: 300px;
@@ -240,9 +251,10 @@ const Skill = styled.div`
   & ul{
     display: flex;
     flex-wrap: wrap;
+    max-width: 600px;
   }
   & li{
-    margin-right: 30px;
+    margin-right: 15px;
     margin-bottom: 20px;
     background: lightgrey;
     padding: 8px 12px;
@@ -255,7 +267,7 @@ const Experience = styled.ul`
     border-bottom: 1px solid rgba(0,0,0,.2);
     padding: 30px 0;
     & div{
-      padding: 10px 0;
+      padding: 0 0 10px 0;
     }
     &:last-child{
       border: none;
@@ -268,6 +280,11 @@ const Date = styled.span`
   font-weight: 300;
   margin-left: 10px;
   vertical-align: middle;
+  @media only screen and (max-width: 767px) {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+  }
 `;
 
 const Title = styled.span`
