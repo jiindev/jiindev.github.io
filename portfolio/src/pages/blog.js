@@ -47,7 +47,7 @@ const PostLink = styled(GatsbyLink)`
   @media only screen and (max-width: 1000px) {
     width: 50%;
   }
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 767px) {
     width: 100%;
   }
 `;
@@ -97,7 +97,7 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 280)
+          excerpt
           timeToRead
           html
         }

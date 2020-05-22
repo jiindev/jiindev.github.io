@@ -28,6 +28,7 @@ export default function Works() {
                                 <div>
                                     {v.siteUrl && <a href={v.siteUrl} target="blank"><Button>사이트 바로가기</Button></a>}
                                     {v.githubUrl && <a href={v.githubUrl} target="blank"><Button><i className="fab fa-github"/> GITHUB 바로가기</Button></a>}
+                                    {v.blogUrl && <a href={v.blogUrl}><Button>개발일지 보기</Button></a>}
                                 </div>
                             </div>
                         
@@ -51,7 +52,7 @@ const Image = styled.div`
        background-position: center center;
        background-repeat: no-repeat;
        margin: 0 30px;
-       @media only screen and (max-width: 720px) {
+       @media only screen and (max-width: 767px) {
            flex:none;
            height: 300px;
        }
@@ -92,7 +93,7 @@ const Work = styled.div`
            }
        }
    }
-   @media only screen and (max-width: 720px) {
+   @media only screen and (max-width: 767px) {
         padding: 10px 0;
         &>div{
             flex-direction: column;

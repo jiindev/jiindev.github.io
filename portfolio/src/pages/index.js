@@ -79,7 +79,7 @@ export default function Home() {
           font-size: 68px;
         }
     }
-    @media only screen and (max-width: 720px) {
+    @media only screen and (max-width: 767px) {
         & br{
           display: inline
         }

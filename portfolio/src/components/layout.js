@@ -94,7 +94,7 @@ const HamburgerButton = styled.span`
   &:before{
     transform: ${props=>props.hamburgerToggle ? 'translateY(12px) rotate(135deg)' : 'none'};
   }
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 767px) {
     display: inline-block;
   }
 `;
@@ -130,7 +130,7 @@ const Nav = styled.nav`
         width: 100%;
       }
     }
-    @media only screen and (max-width: 720px) {
+    @media only screen and (max-width: 767px) {
       padding-bottom: 0;
       & ul{
         width: 100%;
@@ -157,7 +157,7 @@ const Nav = styled.nav`
     vertical-align: center;
     padding: 10px 0 10px 15px;
     display: inline-block;
-    @media only screen and (max-width: 720px) {
+    @media only screen and (max-width: 767px) {
       font-size: 18px;
     }
   `;

@@ -15,12 +15,23 @@ export default function BlogPost({data}) {
         <meta name="description" content={post.excerpt} />
         <meta property="og:description" content={post.excerpt}/>
      </Helmet>
-      <Header headerText={post.frontmatter.title}/>
+      <H2>{post.frontmatter.title}</H2>
       <Date>{post.frontmatter.date}</Date>
       <Content className="center" dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   )
 }
+
+const H2 = styled.h2`
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  padding: 100px 0 50px 0;
+  transition: all .2s ease;
+  @media only screen and (max-width: 767px) {
+    font-size: 36px;
+  }
+`;
 
 const Date = styled.div`
   text-align: center;
