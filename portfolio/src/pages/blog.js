@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import styled from "styled-components";
 import Header from '../components/header';
 import {graphql} from 'gatsby';
@@ -7,32 +6,33 @@ import { Link as GatsbyLink } from "gatsby"
 
 export default function Blog({data}) {
   return (
-    <Layout>
-      <Header headerText={'BLOG'}/>
+    <>
       <Wrap>
+      <Header headerText={'BLOG'}/>
         <ul className="center">
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <PostLink
-        to={node.fields.slug}>
-          <Post key={node.id}>
-            <Image imageUrl={node.frontmatter.thumbnail}/>
-            <Text>
-              <h4>{node.frontmatter.title}</h4>
-              <span>{node.frontmatter.date}</span>
-              <p>{node.excerpt}</p>
-            </Text>
+      {data.allMarkdownRemark.edges.map(({ node }, i) => (
+          <Post key={i}>
+            <PostLink
+            to={node.fields.slug}>
+              <Image imageUrl={node.frontmatter.thumbnail}/>
+              <Text>
+                <h4>{node.frontmatter.title}</h4>
+                <span>{node.frontmatter.date}</span>
+                <p>{node.excerpt}</p>
+              </Text>
+            </PostLink>
           </Post>
-        </PostLink> 
         ))
         }
         </ul>
       </Wrap>
-    </Layout>
+    </>
   )
 };
 
 const Wrap = styled.div`
   padding-bottom: 100px;
+  background-color: white;
   & ul{
     display: flex;
     flex-direction: row;
@@ -43,13 +43,7 @@ const Wrap = styled.div`
 const PostLink = styled(GatsbyLink)`
   text-decoration: none;
   color: black;
-  width: 33.3%;
-  @media only screen and (max-width: 1000px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 767px) {
-    width: 100%;
-  }
+  
 `;
 
 const Post = styled.li`
@@ -57,6 +51,13 @@ const Post = styled.li`
   margin: 10px 0;
   & p{
     line-height: 1.5;
+  }
+  width: 33.3%;
+  @media only screen and (max-width: 1000px) {
+    width: 50%;
+  }
+  @media only screen and (max-width: 767px) {
+    width: 100%;
   }
 `;
 

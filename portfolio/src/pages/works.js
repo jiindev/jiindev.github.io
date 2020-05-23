@@ -1,14 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
 import styled from "styled-components"
 import Header from '../components/header';
 import worksData from "../data/works.yaml"
+import { Link as GatsbyLink } from "gatsby";
 
 export default function Works() {
   return (
-    <Layout>
-      <Header headerText={'WORKS'}/>
+      <>
       <Wrap>
+      <Header headerText={'WORKS'}/>
         {worksData.map((v, i)=>{
             return (
                 <Work key={i}>
@@ -28,7 +28,7 @@ export default function Works() {
                                 <div>
                                     {v.siteUrl && <a href={v.siteUrl} target="blank"><Button>사이트 바로가기</Button></a>}
                                     {v.githubUrl && <a href={v.githubUrl} target="blank"><Button><i className="fab fa-github"/> GITHUB 바로가기</Button></a>}
-                                    {v.blogUrl && <a href={v.blogUrl}><Button>개발일지 보기</Button></a>}
+                                    {v.blogUrl && <GatsbyLink to={v.blogUrl}><Button>개발일지 보기</Button></GatsbyLink>}
                                 </div>
                             </div>
                         
@@ -37,9 +37,7 @@ export default function Works() {
             )
         })}
       </Wrap>
-      
-      
-    </Layout>
+      </>
   )
 }
 

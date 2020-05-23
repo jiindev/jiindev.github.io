@@ -1,8 +1,10 @@
-import React, {useState, memo} from "react"
-import styled, { createGlobalStyle } from "styled-components"
+import React, {useState, useEffect} from "react";
+import styled, { createGlobalStyle } from "styled-components";
 import reset from 'styled-reset';
-import { Link as GatsbyLink } from "gatsby"
-import { Helmet } from 'react-helmet'
+import { Link as GatsbyLink } from "gatsby";
+import { Helmet } from 'react-helmet';
+import Transition from './transition';  
+
 
 const GlobalStyle = createGlobalStyle`
 ${reset};
@@ -19,11 +21,15 @@ body {
   margin: 0 auto;
 }
 `
-export default function Layout ({ children }) {
+export default function Layout ({ children, location }) {
+  
   const [hamburgerToggle, setHamburgerToggle] = useState(false);
   const onClickHamburger = () => {
     setHamburgerToggle(!hamburgerToggle);
   }
+  useEffect(() => {
+    setHamburgerToggle(false);
+  }, [location])
   return (
     <>
     <GlobalStyle/>
@@ -37,23 +43,23 @@ export default function Layout ({ children }) {
     </Helmet>
     <Nav hamburgerToggle={hamburgerToggle}>
           <div className="center">
-            <StyledLink to="/"><LOGO>JIIN,<br/>DEV</LOGO></StyledLink>
+           <StyledLink to="/"><LOGO>JIIN,<br/>DEV</LOGO></StyledLink>
             <HamburgerButton onClick={onClickHamburger} hamburgerToggle={hamburgerToggle}><span/></HamburgerButton>
             <ul>
-              <StyledLink to="about"><li>ABOUT</li></StyledLink>
-              <StyledLink to="works"><li>WORKS</li></StyledLink>
-              <StyledLink to="blog"><li>BLOG</li></StyledLink>
+            <StyledLink to="/about"><li>ABOUT</li></StyledLink>
+            <StyledLink to="/works"><li>WORKS</li></StyledLink>
+            <StyledLink to="/blog"><li>BLOG</li></StyledLink>
             </ul>
           </div>
     </Nav>
     <Frame/>
     <Page>
-      {children}
-      <Footer>
-      © 2020 gatsby simple-dev-theme by <a href="https://github.com/jiindev" target="blank">jiindev</a>
-      </Footer>
+      <Transition location = {location}>
+        {children}
+        <Footer>© 2020 gatsby simple-dev-theme by <a href="https://github.com/jiindev" target="blank">jiindev</a></Footer>
+      </Transition>
     </Page>
-    </>
+  </>
   )
 };
 

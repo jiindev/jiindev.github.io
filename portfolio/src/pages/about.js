@@ -6,9 +6,9 @@ import {Button} from './works';
 
 export default function About() {
   return (
-    <Layout>
+    <>
+    <Wrap>
       <Header headerText={'ABOUT'}/>
-      <Wrap>
         <div className="center">
           <Content>
             <Profile>
@@ -159,7 +159,7 @@ export default function About() {
           </Content>
           </div>
       </Wrap>
-    </Layout>
+    </>
   )
 }
 

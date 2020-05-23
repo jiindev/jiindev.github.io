@@ -1,6 +1,6 @@
 ---
 title: "드림위치 개발일지"
-date: "2020-05-21"
+date: "2020. 5. 21"
 thumbnail: '/blog/about-dreamwitch0.jpg'
 ---
 

@@ -7,8 +7,7 @@ import 'babel-polyfill';
 export default function Home() {
     return (
        <>
-       <Layout>
-         <Header>
+         <Wrap>
            <div>
               <Illust/>
               <h1>
@@ -25,8 +24,7 @@ export default function Home() {
                 <a href="https://github.com/jiindev" target="blank"><Button><i className="fab fa-github"/> Github 바로가기</Button></a>
               </div>
            </div>
-         </Header>
-        </Layout>
+         </Wrap>
        </>
       );
   }
@@ -42,7 +40,7 @@ export default function Home() {
     }
   `;
   
-  const Header = styled.header`
+  const Wrap = styled.div`
     height: 100vh;
     text-align: center;
     margin: 0 auto;
