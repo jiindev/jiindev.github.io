@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
 import Header from '../components/header';
 import styled from "styled-components";
 import {Button} from './works';
+import { Link as GatsbyLink } from "gatsby";
 
 export default function About() {
   return (
@@ -23,7 +23,7 @@ export default function About() {
                 <span>LOCATION</span> Seoul, Korea<br/>
                 <span>MAIL</span> jiindev@gmail.com
               </p>
-              <Button><i className="fab fa-github"/> GITHUB</Button>
+              <a href='https://github.com/jiindev' target="blank"><Button>개발일지 보기</Button><Button><i className="fab fa-github"/> GITHUB</Button></a>
               </div>
               
             </Profile>
