@@ -23,7 +23,7 @@ export default function About() {
                 <span>LOCATION</span> Seoul, Korea<br/>
                 <span>MAIL</span> jiindev@gmail.com
               </p>
-              <a href='https://github.com/jiindev' target="blank"><Button>개발일지 보기</Button><Button><i className="fab fa-github"/> GITHUB</Button></a>
+              <a href='https://github.com/jiindev' target="blank"><Button><i className="fab fa-github"/> GITHUB</Button></a>
               </div>
               
             </Profile>

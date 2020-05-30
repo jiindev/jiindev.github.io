@@ -56,7 +56,7 @@ export default function Home() {
       }
     }
     & div>div{
-      animation: ${TextAni} 1s ease-out 5s forwards;
+      animation: ${TextAni} 1s ease-out 4s forwards;
       opacity: 0;
       position: relative;
     }
