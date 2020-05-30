@@ -31,7 +31,6 @@ export default function Works() {
                                     {v.blogUrl && <GatsbyLink to={v.blogUrl}><Button>개발일지 보기</Button></GatsbyLink>}
                                 </div>
                             </div>
-                        
                     </div>
                 </Work>
             )
@@ -41,7 +40,9 @@ export default function Works() {
   )
 }
 
-const Wrap = styled.div``
+const Wrap = styled.div`
+    padding-bottom: 50px;
+`
 const Image = styled.div`
     background: ${props=>`url(${props.link})`};
     height: 500px;

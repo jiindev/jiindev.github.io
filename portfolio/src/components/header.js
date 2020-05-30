@@ -9,7 +9,7 @@ const H2 = styled.h2`
   font-size: 64px;
   font-weight: 700;
   text-align: center;
-  padding: 100px 0 50px 0;
+  padding: 100px 15px 50px 15px;
   transition: all .2s ease;
   @media only screen and (max-width: 767px) {
     font-size: 48px;

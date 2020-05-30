@@ -20,6 +20,9 @@ body {
   max-width: 1024px;
   margin: 0 auto;
 }
+.center.post{
+  max-width: 800px;
+}
 `
 export default function Layout ({ children, location }) {
   
@@ -52,7 +55,6 @@ export default function Layout ({ children, location }) {
             </ul>
           </div>
     </Nav>
-    <Frame/>
     <Page>
       <Transition location = {location}>
         {children}
@@ -63,14 +65,6 @@ export default function Layout ({ children, location }) {
   )
 };
 
-const Frame = styled.div`
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 999;
-    pointer-events: none;
-`;
 const StyledLink = styled(GatsbyLink)`
     text-decoration: none;
     color: black;
@@ -105,7 +99,6 @@ const HamburgerButton = styled.span`
   }
 `;
 const Nav = styled.nav`
-
     position: fixed;
     width: 100%;
     box-sizing: border-box;

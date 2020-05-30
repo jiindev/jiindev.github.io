@@ -47,12 +47,13 @@ const PostLink = styled(GatsbyLink)`
 `;
 
 const Post = styled.li`
+  width: 33.3%;
   padding: 20px 15px;
   margin: 10px 0;
+  box-sizing: border-box;
   & p{
     line-height: 1.5;
   }
-  width: 33.3%;
   @media only screen and (max-width: 1000px) {
     width: 50%;
   }

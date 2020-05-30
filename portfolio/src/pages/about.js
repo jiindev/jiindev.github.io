@@ -120,13 +120,6 @@ export default function About() {
                       </div>
                       <p></p>
                     </li>
-                    <li>
-                      <div>
-                        <Title>코드스테이츠 <span>자바스크립트 pre 코스 이수</span></Title>
-                        <Date>2019. 9 - 2019. 10</Date>
-                      </div>
-                      <p></p>
-                    </li>
                   </Experience>
                 </Section>
                 <Section>

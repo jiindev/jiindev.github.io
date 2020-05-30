@@ -1,6 +1,5 @@
 import React from "react"
 import styled, {keyframes} from "styled-components"
-import Layout from "../components/layout"
 import Typist from 'react-typist';
 import 'babel-polyfill';
 
@@ -9,7 +8,6 @@ export default function Home() {
        <>
          <Wrap>
            <div>
-              <Illust/>
               <h1>
               <Typist cursor={{show:false}}>
                 JIIN,
@@ -94,11 +92,6 @@ export default function Home() {
     }
     
   `;
-
-  const Illust = styled.span`
-    
-  `;
-
   const Button = styled.button`
     border: 3px solid black;
     outline: none;
