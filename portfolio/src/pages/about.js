@@ -34,7 +34,6 @@ export default function About() {
                   디자인을 전공했지만 코딩이 재미있어 개발자의 길을 걷게 되었습니다.<br/>
                   시각디자인에 대한 많은 관심과 애정을 가지고 있으며, UX 직업교육을 이수하여 UX기획자로 일한 경험이 있습니다.<br/>
                   이러한 경험과 능력을 살려 디자이너와 기획자의 시선에서 프로젝트를 바라보고 <br/>원활한 커뮤니케이션을 해낼 자신이 있습니다.<br/>
-                  현재 프론트 엔드 직무로 구직중이지만 백엔드에도 큰 관심을 가지고 있으며 <br/>다른 개발자들 앞에서 자신을 풀스택 개발자라고 당당하게 소개할 수 있는 개발자가 되는 것이 현재 목표입니다.<br/>
                   자신에게 부족한 점에 대해 고민하고 끊임없이 발전하는 웹개발자가 되고 싶습니다.
                   </p>
                 </AboutSection>
@@ -48,7 +47,7 @@ export default function About() {
                     <li>React.js</li>
                     <li>Express.js</li>
                     <li>Gatsby.js</li>
-                    <li>PHP</li>
+                    <li>Sequelize</li>
                   </ul>
                   </Skill>
                 </Section>
@@ -57,22 +56,22 @@ export default function About() {
                   <Experience>
                     <li>
                       <div>
-                        <Title>폴리큐브 <span>삼성테마 UI 디자이너</span></Title>
-                        <Date>2016. 10 - 2016. 12</Date>
-                      </div>
-                      <p>
-                        예술의 전당 위대한 낙서전 전시 런쳐 테마 6종 제작 <a href="https://news.samsung.com/kr/?p=315505" target="blank">자세히 보기</a>
-                        <br/>그 외 20종 삼성테마 디자인 작업
-                      </p>
-                    </li>
-                    <li>
-                      <div>
                         <Title>리얼웨이브 <span>전략기획그룹 / 주임</span></Title>
                         <Date>2018. 9 - 2019. 1</Date>
                       </div>
                       <p>
                         포스코 MES 3.0 차세대 생산관제시스템 구축프로젝트<br/>
                         UX 컨설팅 및 기획 (기획표준정의서 작성 및 공통기능 정의, 그 외 UX기획문서 작성 업무)
+                      </p>
+                    </li>
+                    <li>
+                      <div>
+                        <Title>폴리큐브 <span>삼성테마 UI 디자이너</span></Title>
+                        <Date>2016. 10 - 2016. 12</Date>
+                      </div>
+                      <p>
+                        예술의 전당 위대한 낙서전 전시 런쳐 테마 6종 제작 <a href="https://news.samsung.com/kr/?p=315505" target="blank">자세히 보기</a>
+                        <br/>그 외 20종 삼성테마 디자인 작업
                       </p>
                     </li>
                   </Experience>
@@ -92,17 +91,10 @@ export default function About() {
                     </li>
                     <li>
                       <div>
-                        <Title>스마트기기 사용자경험(UX) 전문가 과정 <span>수료</span></Title>
-                        <Date>2016. 8 - 2017. 2</Date>
+                        <Title>정보처리기사 <span>자격증 취득</span></Title>
+                        <Date>2019. 8</Date>
                       </div>
-                      <p>한국인터넷전문가협회에서 주관한 스마트기기 사용자경험(UX) 기획 및 설계 전문가 양성 국비교육 과정 수료</p>
-                    </li>
-                    <li>
-                      <div>
-                        <Title>웹퍼블리셔/프론트앤드 개발자 과정 <span>수료</span></Title>
-                        <Date>2018. 1 - 2018. 6</Date>
-                      </div>
-                      <p>그린컴퓨터아카데미에서 주관한 웹퍼블리셔/프론트앤드 개발자(Frontend, PHP) 국비교육 과정 수료</p>
+                      <p></p>
                     </li>
                     <li>
                       <div>
@@ -115,10 +107,17 @@ export default function About() {
                     </li>
                     <li>
                       <div>
-                        <Title>정보처리기사 <span>자격증 취득</span></Title>
-                        <Date>2019. 8</Date>
+                        <Title>웹퍼블리셔/프론트앤드 개발자 과정 <span>수료</span></Title>
+                        <Date>2018. 1 - 2018. 6</Date>
                       </div>
-                      <p></p>
+                      <p>그린컴퓨터아카데미에서 주관한 웹퍼블리셔/프론트앤드 개발자(Frontend, PHP) 국비교육 과정 수료</p>
+                    </li>
+                    <li>
+                      <div>
+                        <Title>스마트기기 사용자경험(UX) 전문가 과정 <span>수료</span></Title>
+                        <Date>2016. 8 - 2017. 2</Date>
+                      </div>
+                      <p>한국인터넷전문가협회에서 주관한 스마트기기 사용자경험(UX) 기획 및 설계 전문가 양성 국비교육 과정 수료</p>
                     </li>
                   </Experience>
                 </Section>
@@ -127,25 +126,25 @@ export default function About() {
                   <Experience>
                   <li>
                       <div>
-                        <Title>라이나생명 <span>대학생 아이디어 공모전 대상</span></Title>
-                        <Date>2014. 12</Date>
+                        <Title>한국인터넷전문가협회 <span>UX 시상식 최우수상</span></Title>
+                        <Date>2017. 2</Date>
                       </div>
-                      <p>라이나생명 대학생 아이디어 공모전 'THE 건강한 가족, THE 건강한 사회'. 2인 팀작업으로 ‘행복은 이어집니다’ 영상작품을 제출. 대상 수상 <a href="https://www.youtube.com/watch?v=VhGKu-gyzAk" target="blank">자세히 보기</a></p>
-                    </li>
-                    <li>
+                      <p>4인 팀작업으로 ‘Coinstage’ 오락 서비스 기획 및 UX/UI디자인 작품 제출. 최우수상 수상</p>
+                  </li>
+                  <li>
                       <div>
                         <Title>iCOOP 생협 <span>공모전 UCC 부문 최우수상</span></Title>
                         <Date>2015. 2</Date>
                       </div>
                       <p>iCOOP 생협에서 진행한 소중한 우리 농업 지키기 공모전. 애니메이션 영상 작업으로 UCC 부문 최우수상 수상</p>
-                    </li>
-                    <li>
+                  </li>
+                  <li>
                       <div>
-                        <Title>한국인터넷전문가협회 <span>UX 시상식 최우수상</span></Title>
-                        <Date>2017. 2</Date>
+                        <Title>라이나생명 <span>대학생 아이디어 공모전 대상</span></Title>
+                        <Date>2014. 12</Date>
                       </div>
-                      <p>4인 팀작업으로 ‘Coinstage’ 오락 서비스 기획 및 UX/UI디자인 작품 제출. 최우수상 수상</p>
-                    </li>
+                      <p>라이나생명 대학생 아이디어 공모전 'THE 건강한 가족, THE 건강한 사회'. 2인 팀작업으로 ‘행복은 이어집니다’ 영상작품을 제출. 대상 수상 <a href="https://www.youtube.com/watch?v=VhGKu-gyzAk" target="blank">자세히 보기</a></p>
+                  </li>
                   </Experience>
                 </Section>
             </div>

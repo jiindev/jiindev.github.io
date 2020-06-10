@@ -20,6 +20,21 @@
   imgLink: /dreamwitch.jpg
   blogUrl: /blog/about-dreamwitch/
 
+- title: jdus
+  date: 2020. 06
+  description: |
+    평소에 자주 사용하던 사이트인 아이디어스를 리액트를 이용하여 클론코딩하여 만든 사이트입니다.
+    메인 화면, 서브 화면 5페이지, 상품 페이지를 구현하였으며 디자인 및 UI 구현을 중점으로 두어 진행했습니다. 
+
+  skills: 
+    - React Gatsby.js
+    - React slick 
+    - Reponsive web
+  siteUrl: https://jdus.netlify.app/
+  githubUrl: https://github.com/jiindev/idus-cloneCoding
+  imgLink: /jdus.jpg
+  blogUrl: /blog/about-jdus/
+
 - title: 마리의 할로윈 파티
   date: 2019. 9 - 2019. 10
   description: |

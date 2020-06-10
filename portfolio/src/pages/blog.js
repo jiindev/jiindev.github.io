@@ -10,8 +10,8 @@ export default function Blog({data}) {
       <Wrap>
       <Header headerText={'BLOG'}/>
         <ul className="center">
-      {data.allMarkdownRemark.edges.map(({ node }, i) => (
-          <Post key={i}>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+          <Post key={node.id}>
             <PostLink
             to={node.fields.slug}>
               <Image imageUrl={node.frontmatter.thumbnail}/>
@@ -53,6 +53,7 @@ const Post = styled.li`
   box-sizing: border-box;
   & p{
     line-height: 1.5;
+    display: none;
   }
   @media only screen and (max-width: 1000px) {
     width: 50%;
