@@ -1,5 +1,5 @@
 # JIIN, DEV
-프론트엔드 개발자 엄지인의 포트폴리오 & 블로깅 사이트입니다.<br/>
+포트폴리오 & 블로깅 사이트입니다.<br/>
 [사이트 바로가기](https://jiindev.github.io/)<br/>
 <br/>
 ![대표이미지](/portfolio/static/blog_thumbnail.jpg)<br/>
