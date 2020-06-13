@@ -72,4 +72,4 @@ SSL을 확인하는 데에서 시간이 꽤 오래 걸리네요.
 
 [netlify로 배포](https://jdus.netlify.app/)
 
-[amplify로 배포](https://master.d165pr6yvf8mak.amplifyapp.com/)
+[amplify로 배포](https://www.jdus.site/)
