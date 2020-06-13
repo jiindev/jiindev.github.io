@@ -77,6 +77,9 @@ const Content = styled.div`
   & iframe{
     max-width: 100%;
   }
+  & ol li{
+    list-style: decimal;
+  }
 `;
 export const query = graphql`
   query($slug: String!) {
